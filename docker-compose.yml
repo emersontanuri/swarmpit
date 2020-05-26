@@ -76,6 +76,8 @@ services:
           memory: 32M
 
 networks:
+  captain-overlay-network:
+    external: true
   net:
     driver: overlay
     attachable: true
