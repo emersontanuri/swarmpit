@@ -4,6 +4,7 @@ services:
   app:
     image: swarmpit/swarmpit:latest
     environment:
+      - captain-overlay-network
       - SWARMPIT_DB=http://db:5984
       - SWARMPIT_INFLUXDB=http://influxdb:8086
     volumes:
